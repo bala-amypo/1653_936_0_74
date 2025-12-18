@@ -26,6 +26,7 @@ public class ValidationEntity{
     @Min(18)
     @Positive(message = "Age must be greater than or equal to 18")
     private int age;
+    
     public ValidationEntity(long id,
        @NotNull
     @Size(min = 2, max = 0, message = "must be 2 to 10 character") String username,
