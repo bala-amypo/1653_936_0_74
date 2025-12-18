@@ -48,6 +48,9 @@ public class StudentEntity{
         this.email = email;
     }
     public void setPassword(String password){
-        this
+        this.password = password;
+    }
+    public void setCreated(Date created){
+        this.created = created;
     }
 }
