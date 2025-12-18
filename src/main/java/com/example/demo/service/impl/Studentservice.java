@@ -7,5 +7,5 @@ public interface Studentservice{
     String DeleteData(int id);
     String DeleteData(int id);
     StudentEntity getData(int id);
-    StudentEntity putData(int id);
+    StudentEntity putData(int id, StudentEntity entity);
 }

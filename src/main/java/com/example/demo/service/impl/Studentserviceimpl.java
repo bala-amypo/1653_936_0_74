@@ -25,4 +25,10 @@ public class Studentserviceimpl implements Studentservices{
         public StudentEntity getData(int id){
             return student.findById(id);
         }
+        @Override
+        public StudentEntity putData(int id, StudentEntity entity){
+            if(student.existsById(id)){
+                
+            }
+        }
     }
