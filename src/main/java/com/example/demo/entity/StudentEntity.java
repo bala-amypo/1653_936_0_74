@@ -12,5 +12,6 @@ public class StudentEntity{
     private String name;
     private String email;
     private String password;
-    private String 
+    private Date created;
+    
 }
