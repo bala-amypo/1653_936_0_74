@@ -6,10 +6,10 @@ import com.example.demo.entity.StudentEntity;
 import com.example.demo.repository.Studentrepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
-@service
+@Service
 public class Studentserviceimpl implements Studentservices{
     @Autowired Studentrepository student;
-    @override
+    @Override
     public StudentEntity postData(StudentEntity stu){
         return student.save(stu);
     }
