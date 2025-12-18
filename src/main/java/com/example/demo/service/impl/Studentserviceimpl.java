@@ -11,6 +11,7 @@ public class Studentserviceimpl implements Studentservices{
     @override
     public StudentEntity postData(StudentEntity stu){
         return student.save(stu);
+    }
         @Override
         public List<StudentEntity>getAllData(){
             return student.findAll();
@@ -22,7 +23,6 @@ public class Studentserviceimpl implements Studentservices{
         }
         @Override
         public StudentEntity getData(int id){
-            return 
+            return student.findById(id);
         }
     }
-}
