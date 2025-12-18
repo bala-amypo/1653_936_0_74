@@ -3,6 +3,6 @@ import org.springframework.sterotype.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.demo.entity.StudentEntity;
 @Repository
-public interface StudentRepository extends JpaRepository<StudentEntity,Integer>{
-    
+public interface Studentrepository extends JpaRepository<StudentEntity,Integer>{
+
 }
