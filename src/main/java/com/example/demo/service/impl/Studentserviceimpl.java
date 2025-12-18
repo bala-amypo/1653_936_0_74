@@ -23,7 +23,7 @@ public class Studentserviceimpl implements Studentservices{
         }
         @Override
         public StudentEntity getData(int id){
-            return student.findById(id);
+            return student.findById(id).orElse (null);
         }
         @Override
         public StudentEntity putData(int id, StudentEntity entity){
