@@ -10,7 +10,7 @@ import java.util.List;
 public class Studentserviceimpl implements Studentservice{
     @Autowired Studentrepository student;
     @Override
-    public StudentEntity postData(StudentEntity stu){
+    public StudentEntity postdata(StudentEntity stu){
         return student.save(stu);
     }
         @Override
