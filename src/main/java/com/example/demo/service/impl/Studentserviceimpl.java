@@ -6,4 +6,23 @@ import com.example.demo.repository.Studentrepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 @service
-public class Studentserviceimpl implements Studentservices
+public class Studentserviceimpl implements Studentservices{
+    @Autowired Studentrepository student;
+    @override
+    public StudentEntity postData(StudentEntity stu){
+        return student.save(stu);
+        @Override
+        public List<StudentEntity>getAllData(){
+            return student.findAll();
+        }
+        @Override
+        public String DeleteData(int id){
+            student.deleteById(id);
+            return "Deleted Successfully";
+        }
+        @Override
+        public StudentEntity getData(int id){
+            return 
+        }
+    }
+}
