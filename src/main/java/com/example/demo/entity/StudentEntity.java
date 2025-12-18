@@ -1,9 +1,9 @@
 package com.example.demo.entity;
 import java.util.Date;
-import jakarta.presistance.Entity;
-import jakarta.presistance.GeneratedValue;
-import jakarta.presistance.Generationype;
-import jakarta.presistance.Id;
+import jakarta.persistance.Entity;
+import jakarta.persistance.GeneratedValue;
+import jakarta.persistance.GenerationType;
+import jakarta.persistance.Id;
 @Entity
 public class StudentEntity{
     @Id

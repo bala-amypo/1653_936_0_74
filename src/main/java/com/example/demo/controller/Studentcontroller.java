@@ -1,5 +1,5 @@
 package com.example.demo.controller;
-import org.springframework.web.blind.annotation.RestController;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import com.example.demo.service.Studentservice;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
-import java.util.list;
+import java.util.List;
 @RestController
 public class StudentController{
     @Autowired Studentservice service;
@@ -29,8 +29,8 @@ public class StudentController{
     public StudentEntity getdataid(@PathVariable int id){
         return service.getData(id);
     }
-    @PutMapping("put/{id}")
-    public StudentEntity putvalId(@PathVariable int id,@RequestBodey StudentEntity entity){
+    @PutMapping("/put/{id}")
+    public StudentEntity putvalId(@PathVariable int id,@RequestBody StudentEntity entity){
         return service.putData(id,entity);
     }
 }
