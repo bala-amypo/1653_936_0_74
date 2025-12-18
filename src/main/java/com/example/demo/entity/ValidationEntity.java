@@ -28,9 +28,30 @@ public class ValidationEntity{
      @Email(message = "Email is not valid") String email,
         @Size(min==6, max = 100)@NotNull(message  = "Password is mandatory") String password,
          @Min(18) @Positive(message = "Age must be greater than or equal to 18") int age ){
-
-         }
          this.id = id;
          this.username = username;
-         this.
+         this.email = email;
+         this.password = password;
+         this.age = age;
+         }
+         public ValidationEntity(){
+
+         }
+         public Long getId(){
+            return id;
+         }
+         public String getUserName(){
+            return username;
+         }
+         public String getEmail(){
+            return email;
+         }
+         public String getPassword(){
+            return password;
+         }
+         public Integer getAge(){
+            return age;
+         }
+         public void setId()
+
 }
