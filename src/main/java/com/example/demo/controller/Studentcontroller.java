@@ -11,6 +11,10 @@ public class StudentController{
     @Autowired Studentservice service;
     @PostMapping("/post")
     public StudentEntity postval(@RequestBody StudentEntity entity){
-        return service
+        return service.postdata(entity);
+    }
+    @GetMapping("/get")
+    public List<StudentEntity> getval(){
+        return service.getAllData();
     }
 }
