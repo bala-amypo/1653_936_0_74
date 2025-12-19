@@ -1,5 +1,5 @@
 package com.example.demo.entity;
-import java.util.Date;
+import java.time.LocalDateTime;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +18,6 @@ public class TimestampEntity{
     private String name;
     private String email;
     private String password;
-    private Date created;
-    private Date update;
+    private LocalDateTime created;
+    private LocalDateTime update;
     }
