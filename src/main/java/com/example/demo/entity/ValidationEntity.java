@@ -10,22 +10,29 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Positive;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ValidationEntity{
-   //  @Id
-   //  @GeneratedValue(strategy = GenerationType.IDENTITY)
-   //  private Long id;
-   //  @NotNull
-   //  @Size(min = 2, max = 10, message = "must be 2 to 10 character")
-   //  private String username;
-   //  @Email(message = "Email is not valid")
-   //  private String email;
-   //  @Size(min=6, max = 100)
-   //  @NotNull(message  = "Password is mandatory")
-   //  private String password;
-   //  @Min(18)
-   //  @Positive(message = "Age must be greater than or equal to 18")
-   //  private int age;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @NotNull
+    @Size(min = 2, max = 10, message = "must be 2 to 10 character")
+    private String username;
+    @Email(message = "Email is not valid")
+    private String email;
+    @Size(min=6, max = 100)
+    @NotNull(message  = "Password is mandatory")
+    private String password;
+    @Min(18)
+    @Positive(message = "Age must be greater than or equal to 18")
+    private int age;
+}
     
    //  public ValidationEntity(long id,
    //     @NotNull
@@ -74,4 +81,3 @@ public class ValidationEntity{
    //          this.age = age;
    //       }
 
-}
