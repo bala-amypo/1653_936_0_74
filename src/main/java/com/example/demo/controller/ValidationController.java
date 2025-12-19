@@ -18,6 +18,9 @@ public class ValidationController{
     public ValidationEntity postval(@Valid @RequestBody ValidationEntity entity){
         return service.postdata(entity);
     }
-    
+    @GetMapping("/getvalid/{id}")
+    public ValidationEntity getVal(@PathVariable int id){
+        return service.
+    }
     
 }
