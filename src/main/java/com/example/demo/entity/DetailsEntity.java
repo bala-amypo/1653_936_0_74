@@ -10,8 +10,8 @@ import jakarta.persistence.PreUpdate;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
-import jakarta.persistance.OneToOne;
-import jakarta.persistance.JoinColumn;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
 @Entity
 @Data
 @NoArgsConstructor
