@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.example.demo.exception.ValidationException;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.RequestEntity;
+import org.springframework.http.ResponseEntity;
 @RestControllerAdvice
 public class GlobalException{
     @ExpertHandler(ValidationException.class)
