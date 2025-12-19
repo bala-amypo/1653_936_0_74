@@ -4,15 +4,22 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 @Entity
-// public class StudentEntity{
-//     @Id
-//     @GeneratedValue(strategy=GenerationType.IDENTITY)
-//     private Integer id;
-//     private String name;
-//     private String email;
-//     private String password;
-//     private Date created;
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class StudentEntity{
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Integer id;
+    private String name;
+    private String email;
+    private String password;
+    private Date created;
+    }
 //     public StudentEntity(){
         
 //     }
@@ -55,6 +62,5 @@ import jakarta.persistence.Id;
 //         this.created = created;
 //     }
 // }
-public class StudentEntity{
-     
-}
+
+
