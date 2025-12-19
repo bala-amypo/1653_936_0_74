@@ -10,7 +10,7 @@ import java.util.List;
 public class Timestampserviceimpl implements Timestampservice{
     @Autowired Timestamprepository student;
     @Override
-    public TimestampEntity postdata(TimestampEntity stu){
+    public TimestampEntity postime(TimestampEntity stu){
         return student.save(stu);
     }
 }
