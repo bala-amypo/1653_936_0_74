@@ -19,6 +19,7 @@ public class DetailsEntity{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private int cardnum;
-    private Student
+    @OneToOne
+    private StudentDatabase student;
 
 }
