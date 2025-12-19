@@ -18,6 +18,6 @@ public class TimestampEntity{
     private String name;
     private String email;
     private String password;
-    private LocalDateTime created;
-    private LocalDateTime update;
+    private LocalDateTime createdAt;
+    private LocalDateTime updateAt;
     }
