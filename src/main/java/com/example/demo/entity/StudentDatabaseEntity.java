@@ -18,6 +18,7 @@ public class StudentDatabaseEntity{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    p
-    id name email address
+    private String email;
+    private String address;
+   
 }
