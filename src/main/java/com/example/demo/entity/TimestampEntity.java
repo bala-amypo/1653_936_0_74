@@ -26,6 +26,7 @@ public class TimestampEntity{
     public void onCreate(){
         LocalDateTime now =  LocalDateTime.now();
         if(this.createdAt==null){
+        this.createdAt = now;
         }
         
         this.updateAt = now;
