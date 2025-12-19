@@ -14,7 +14,7 @@ import java.util.List;
 public class DetailsController{
     @Autowired Detailservice service;
     @PostMapping("/postDetail")
-    public StudentDatabaseEntity postval(@RequestBody DetailsEntity entity){
+    public DetailsEntity postval(@RequestBody DetailsEntity entity){
         return service.postDetail(entity);
     }
 }
