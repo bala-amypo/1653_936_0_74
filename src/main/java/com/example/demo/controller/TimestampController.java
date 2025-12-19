@@ -14,7 +14,7 @@ import java.util.List;
 public class TimestampController{
     @Autowired Timestampservice service;
     @PostMapping("/post")
-    public TimestampEntity postval(@RequestBody TimeEntity entity){
+    public TimestampEntity postval(@RequestBody TimestampEntity entity){
         return service.postime(entity);
     }
 }
