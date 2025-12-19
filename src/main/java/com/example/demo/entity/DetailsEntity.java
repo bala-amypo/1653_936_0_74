@@ -22,8 +22,8 @@ public class DetailsEntity{
     private Integer id;
     private int cardnum;
     @OneToOne
-    private StudentDatabase student;
     @JoinColumn(name = "student_id")
+    private StudentDatabaseEntity student;
 
 
 }
