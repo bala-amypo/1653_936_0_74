@@ -18,4 +18,6 @@ public class ValidationController{
     public ValidationEntity postval(@Valid @RequestBody ValidationEntity entity){
         return service.postdata(entity);
     }
+    
+    
 }
