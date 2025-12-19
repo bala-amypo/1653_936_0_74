@@ -56,5 +56,5 @@ import jakarta.persistence.Id;
 //     }
 // }
 public class StudentEntity{
-    
+     
 }
