@@ -4,5 +4,5 @@ import java.util.List;
 import com.example.demo.entity.ValidationEntity;
 public interface Validationservice{
     ValidationEntity postdata(ValidationEntity entity);
-    ValidationEntity getValue(int id);
+    ValidationEntity getValue(Long id);
 }
