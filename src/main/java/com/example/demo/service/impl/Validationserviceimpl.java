@@ -13,5 +13,8 @@ public class Validationserviceimpl implements Validationservice{
     public ValidationEntity postdata(ValidationEntity val){
         return student.save(val);
     }
-    
+     @Override
+        public ValidationEntity getData(int id){
+            return student.findById(id).orElse;
+        }
 }
