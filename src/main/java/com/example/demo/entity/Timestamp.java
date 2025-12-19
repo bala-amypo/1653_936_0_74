@@ -11,3 +11,13 @@ import lombok.AllArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+public class Timestamp{
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Integer id;
+    private String name;
+    private String email;
+    private String password;
+    private Date created;
+    private Date update;
+    }
