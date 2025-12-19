@@ -10,6 +10,8 @@ import jakarta.persistence.PreUpdate;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
+import jakarta.persistance.OneToOne;
+import jakarta.persistance.JoinColumn;
 @Entity
 @Data
 @NoArgsConstructor
@@ -21,5 +23,7 @@ public class DetailsEntity{
     private int cardnum;
     @OneToOne
     private StudentDatabase student;
+    @JoinColumn(name = "student_id")
+
 
 }
