@@ -6,6 +6,7 @@ import com.example.demo.entity.ValidationEntity;
 import com.example.demo.repository.ValidationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
+import com.example.demo.exception.ValidationException;
 @Service
 public class Validationserviceimpl implements Validationservice{
     @Autowired ValidationRepository student;
